@@ -1,11 +1,11 @@
 npm i lib-flexible --save
-2.ÔÚÏîÄ¿Èë¿ÚÎÄ¼şmain.jsÖĞÒıÈëlib-flexible
+2.åœ¨é¡¹ç›®å…¥å£æ–‡ä»¶main.jsä¸­å¼•å…¥lib-flexible
 import 'lib-flexible/flexible.js'
-3.ÔÚÏîÄ¿¸ùÄ¿Â¼µÄindex.html Í·²¿¼ÓÈëÊÖ»ú¶ËÊÊÅäµÄmetaµÄ´úÂë
+3.åœ¨é¡¹ç›®æ ¹ç›®å½•çš„index.html å¤´éƒ¨åŠ å…¥æ‰‹æœºç«¯é€‚é…çš„metaçš„ä»£ç 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 4.npm install px2rem-loader
-5.ÅäÖÃpx2rem-loader build/untils.js
-  ÕÒµ½ exports.cssLoaders = function (options)
+5.é…ç½®px2rem-loader build/untils.js
+  æ‰¾åˆ° exports.cssLoaders = function (options)
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {
@@ -19,7 +19,7 @@ import 'lib-flexible/flexible.js'
       remUnit: 75
     }
   }
- ½Ó×Å generateLoaders (loader, loaderOptions)·½·¨ÖĞ
+ æ¥ç€ generateLoaders (loader, loaderOptions)æ–¹æ³•ä¸­
  const loaders = options.usePostCSS ? [cssLoader, postcssLoader, px2remLoader] : [cssLoader, px2remLoader]
  if (loader) {
       loaders.push({
@@ -29,3 +29,5 @@ import 'lib-flexible/flexible.js'
         })
       })
     }
+
+å…³äºnode-sass/venter çš„é”™è¯¯ è¯·è¾“å…¥npm rebuild node-sass --save-dev
